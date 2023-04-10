@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   build:
-    name: dist/gw-website
+    name: dist
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -19,8 +19,8 @@ jobs:
       - name: Archive Production Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: dist/gw-website
-          path: build
+          name: dist
+          path: gw-website
   deploy:
     name: Deploy
     needs: build
