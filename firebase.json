@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/gw-website",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
